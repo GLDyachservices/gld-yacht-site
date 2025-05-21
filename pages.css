@@ -1,0 +1,217 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #cceeff;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: auto;
+}
+
+/* Glassmorphism box */
+.glass-box {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 3rem;
+  max-width: 700px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.glass-box p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.glass-box a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.glass-box a:hover {
+  color: #cceeff;
+}
+
+/* Page-specific backgrounds */
+body.about-page {
+  background: url("/gld/about.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.services-page {
+  background: url("/gld/services.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.contact-page {
+  background: url("/gld/contact.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Hero section layout for each page */
+.about-hero,
+.services-hero,
+.contact-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+  min-height: 80vh;
+}
+/* === HOMEPAGE === */
+body.home-page {
+  background: url("/gld/hero\ \(kopia\).jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.home-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+  min-height: 85vh;
+}
+
+/* === CTA Button === */
+.hero-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #000;
+}
+
+/* === Fade-in animation === */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 1.2s ease-out forwards;
+  opacity: 0;
+}
+body.services-page {
+  background: url("../gld/services.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.services-hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6rem 2rem;
+  min-height: 85vh;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.service-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.service-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.service-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+body.contact-page {
+  background: url("../gld/contact.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.contact-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 2rem;
+  min-height: 85vh;
+}
+
+.contact-hero .glass-box {
+  max-width: 600px;
+  text-align: center;
+}
