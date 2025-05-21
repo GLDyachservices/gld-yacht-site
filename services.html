@@ -18,20 +18,37 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
-<section class="services-hero services-container">
-  <div class="service-box collapsed" onclick="toggleExpand(this)">
-    <h2>Yacht Maintenance</h2>
-    <p>We handle regular servicing, deep cleaning, mechanical inspections, and seasonal storage preparation to keep your yacht in peak condition year-round.</p>
-  </div>
 
-  <div class="service-box collapsed" onclick="toggleExpand(this)">
-    <h2>Luxury Guest Concierge</h2>
-    <p>From on-shore experiences to gourmet provisioning and onboard entertainment, our concierge service ensures every moment is curated to perfection.</p>
-  </div>
+  <section class="services-hero services-container">
+    <div class="service-box collapsed" onclick="toggleExpand(this)">
+      <h2>Yacht Maintenance</h2>
+      <p>We handle regular servicing, deep cleaning, mechanical inspections, and seasonal storage preparation to keep your yacht in peak condition year-round.</p>
+    </div>
 
-  <div class="service-box collapsed" onclick="toggleExpand(this)">
-    <h2>Crew Management & Charter Support</h2>
-    <p>We source and manage professional crew and prepare your vessel for charter, including itinerary planning, legal compliance, and guest onboarding.</p>
-  </div>
-</section>
+    <div class="service-box collapsed" onclick="toggleExpand(this)">
+      <h2>Luxury Guest Concierge</h2>
+      <p>From on-shore experiences to gourmet provisioning and onboard entertainment, our concierge service ensures every moment is curated to perfection.</p>
+    </div>
 
+    <div class="service-box collapsed" onclick="toggleExpand(this)">
+      <h2>Crew Management & Charter Support</h2>
+      <p>We source and manage professional crew and prepare your vessel for charter, including itinerary planning, legal compliance, and guest onboarding.</p>
+    </div>
+  </section>
+
+  <div class="footer">© 2025 GLD Yacht Management and Services. All rights reserved.</div>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('show');
+    }
+
+    function toggleExpand(box) {
+      if (window.innerWidth <= 768) {
+        box.classList.toggle('expanded');
+        box.classList.toggle('collapsed');
+      }
+    }
+  </script>
+</body>
+</html>
