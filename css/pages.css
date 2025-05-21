@@ -84,17 +84,22 @@ body {
 
 /* Page-specific backgrounds */
 body.about-page {
-  background: url("/gld/about.jpeg") no-repeat center center fixed;
+  background: url("gld/about.jpeg") no-repeat center center fixed;
   background-size: cover;
 }
 
 body.services-page {
-  background: url("/gld/services.jpeg") no-repeat center center fixed;
+  background: url("gld/services.jpeg") no-repeat center center fixed;
   background-size: cover;
 }
 
 body.contact-page {
-  background: url("/gld/contact.jpeg") no-repeat center center fixed;
+  background: url("gld/contact.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.home-page {
+  background: url("gld/hero (kopia).jpeg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -108,11 +113,6 @@ body.contact-page {
   padding: 5rem 2rem;
   min-height: 80vh;
 }
-/* === HOMEPAGE === */
-body.home-page {
-  background: url("/gld/hero (kopia).jpeg") no-repeat center center fixed;
-  background-size: cover;
-}
 
 .home-hero {
   display: flex;
@@ -122,7 +122,7 @@ body.home-page {
   min-height: 85vh;
 }
 
-/* === CTA Button === */
+/* CTA Button */
 .hero-btn {
   margin-top: 2rem;
   padding: 0.8rem 2rem;
@@ -142,7 +142,7 @@ body.home-page {
   color: #000;
 }
 
-/* === Fade-in animation === */
+/* Animation */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -158,19 +158,8 @@ body.home-page {
   animation: fadeInUp 1.2s ease-out forwards;
   opacity: 0;
 }
-body.services-page {
-  background: url("../gld/services.jpeg") no-repeat center center fixed;
-  background-size: cover;
-}
 
-.services-hero {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 6rem 2rem;
-  min-height: 85vh;
-}
-
+/* Services */
 .services-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -198,11 +187,8 @@ body.services-page {
   font-size: 1.1rem;
   line-height: 1.6;
 }
-body.contact-page {
-  background: url("../gld/contact.jpeg") no-repeat center center fixed;
-  background-size: cover;
-}
 
+/* Contact */
 .contact-hero {
   display: flex;
   justify-content: center;
