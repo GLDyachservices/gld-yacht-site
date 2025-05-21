@@ -2,53 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services – GLD Yacht Management</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | GLD Yacht</title>
   <link rel="stylesheet" href="css/pages.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
 </head>
 <body class="services-page">
-  <div class="navbar">
-    <div class="logo">GLD Yacht Management</div>
-    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <header class="navbar">
+    <div class="logo">GLD Yacht</div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a class="active" href="services.html">Services</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-  </div>
+  </header>
 
-  <section class="services-hero services-container">
-    <div class="service-box collapsed" onclick="toggleExpand(this)">
-      <h2>Yacht Maintenance</h2>
-      <p>We handle regular servicing, deep cleaning, mechanical inspections, and seasonal storage preparation to keep your yacht in peak condition year-round.</p>
+  <main class="services-hero fade-in">
+    <div class="services-container">
+      <div class="service-box">
+        <h2>Private Yacht Charters</h2>
+        <p>
+          Experience the ultimate in luxury and freedom with our bespoke private yacht charters. Whether you’re planning a romantic getaway, a corporate event, or a family holiday, we provide fully crewed yachts tailored to your needs.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <h2>Yacht Management</h2>
+        <p>
+          Let us handle the complexities of yacht ownership. From maintenance and repairs to crew placement and itinerary planning, our management services ensure your yacht is always ready to sail in peak condition.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <h2>Brokerage & Sales</h2>
+        <p>
+          Looking to buy or sell a yacht? Our experienced brokers offer market expertise, a global network, and personalized service to help you navigate every step of the sales or purchase process.
+        </p>
+      </div>
     </div>
+  </main>
 
-    <div class="service-box collapsed" onclick="toggleExpand(this)">
-      <h2>Luxury Guest Concierge</h2>
-      <p>From on-shore experiences to gourmet provisioning and onboard entertainment, our concierge service ensures every moment is curated to perfection.</p>
-    </div>
-
-    <div class="service-box collapsed" onclick="toggleExpand(this)">
-      <h2>Crew Management & Charter Support</h2>
-      <p>We source and manage professional crew and prepare your vessel for charter, including itinerary planning, legal compliance, and guest onboarding.</p>
-    </div>
-  </section>
-
-  <div class="footer">© 2025 GLD Yacht Management and Services. All rights reserved.</div>
-
-  <script>
-    function toggleMenu() {
-      document.querySelector('.nav-links').classList.toggle('show');
-    }
-
-    function toggleExpand(box) {
-      if (window.innerWidth <= 768) {
-        box.classList.toggle('expanded');
-        box.classList.toggle('collapsed');
-      }
-    }
-  </script>
+  <footer class="footer">
+    <p>&copy; 2025 GLD Yacht Services. All rights reserved.</p>
+  </footer>
 </body>
 </html>
