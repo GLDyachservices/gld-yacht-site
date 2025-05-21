@@ -233,17 +233,16 @@ body.contact-page {
     font-size: 1rem;
   }
 
-  .glass-box.collapsed,
-  .service-box.collapsed {
+  /* Read more endast på about-sidan */
+  .glass-box.collapsed {
     max-height: 200px;
     overflow: hidden;
     cursor: pointer;
     position: relative;
   }
 
-  .glass-box.collapsed::after,
-  .service-box.collapsed::after {
-    content: "Read more ";
+  .glass-box.collapsed::after {
+    content: "Read more";
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -255,14 +254,12 @@ body.contact-page {
     color: #fff;
   }
 
-  .glass-box.expanded,
-  .service-box.expanded {
+  .glass-box.expanded {
     max-height: none;
     cursor: auto;
   }
 
-  .glass-box.expanded::after,
-  .service-box.expanded::after {
+  .glass-box.expanded::after {
     content: "";
     display: none;
   }
