@@ -17,6 +17,8 @@ body {
   position: relative;
   z-index: 2;
   flex-wrap: wrap;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -50,6 +52,8 @@ body {
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.4);
   margin-top: auto;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 /* === Glassmorphism-box === */
@@ -233,15 +237,15 @@ body.contact-page {
     font-size: 1rem;
   }
 
-  /* Read more endast på about-sidan */
-  .glass-box.collapsed {
+  /* Read more endast för ABOUT (identifiera via class) */
+  body.about-page .glass-box.collapsed {
     max-height: 200px;
     overflow: hidden;
     cursor: pointer;
     position: relative;
   }
 
-  .glass-box.collapsed::after {
+  body.about-page .glass-box.collapsed::after {
     content: "Read more";
     position: absolute;
     bottom: 10px;
@@ -254,12 +258,12 @@ body.contact-page {
     color: #fff;
   }
 
-  .glass-box.expanded {
+  body.about-page .glass-box.expanded {
     max-height: none;
     cursor: auto;
   }
 
-  .glass-box.expanded::after {
+  body.about-page .glass-box.expanded::after {
     content: "";
     display: none;
   }
