@@ -6,7 +6,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
 .navbar {
@@ -58,7 +57,6 @@ body {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 16px;
   padding: 3rem;
-  width: 100%;
   max-width: 700px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -66,7 +64,6 @@ body {
   color: #fff;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 0 auto;
 }
 
 .glass-box h1 {
@@ -77,8 +74,6 @@ body {
 .glass-box p {
   font-size: 1.1rem;
   line-height: 1.7;
-  word-break: break-word;
-  overflow-wrap: break-word;
 }
 
 .glass-box a {
@@ -118,8 +113,7 @@ body.contact-page {
   align-items: center;
   padding: 5rem 2rem;
   min-height: 85vh;
-  width: 100%;
-  box-sizing: border-box;
+  flex-direction: column;
 }
 
 /* === CTA-knapp === */
@@ -166,6 +160,7 @@ body.contact-page {
   gap: 2rem;
   max-width: 1000px;
   width: 100%;
+  padding: 3rem 2rem;
 }
 
 .service-box {
@@ -176,6 +171,8 @@ body.contact-page {
   color: white;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .service-box h2 {
@@ -186,7 +183,6 @@ body.contact-page {
 .service-box p {
   font-size: 1.1rem;
   line-height: 1.6;
-  word-break: break-word;
 }
 
 /* === Kontakt === */
@@ -214,26 +210,15 @@ body.contact-page {
   }
 
   .glass-box {
-    padding: 1.5rem;
-    width: 95%;
-    max-width: none;
-    font-size: 1rem;
+    padding: 2rem;
   }
 
   .glass-box h1 {
-    font-size: 1.5rem;
-  }
-
-  .glass-box p {
-    font-size: 0.95rem;
+    font-size: 2rem;
   }
 
   .hero-btn {
     width: 100%;
-  }
-
-  .service-box {
-    padding: 1.5rem;
   }
 
   .service-box h2 {
@@ -241,19 +226,24 @@ body.contact-page {
   }
 
   .service-box p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
-}
-@media (max-width: 768px) {
-  .glass-box.collapsed {
+
+  .glass-box p {
+    font-size: 1rem;
+  }
+
+  .glass-box.collapsed,
+  .service-box.collapsed {
     max-height: 200px;
     overflow: hidden;
     cursor: pointer;
     position: relative;
   }
 
-  .glass-box.collapsed::after {
-    content: "Läs mer";
+  .glass-box.collapsed::after,
+  .service-box.collapsed::after {
+    content: "Read more";
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -265,12 +255,14 @@ body.contact-page {
     color: #fff;
   }
 
-  .glass-box.expanded {
+  .glass-box.expanded,
+  .service-box.expanded {
     max-height: none;
     cursor: auto;
   }
 
-  .glass-box.expanded::after {
+  .glass-box.expanded::after,
+  .service-box.expanded::after {
     content: "";
     display: none;
   }
