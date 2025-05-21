@@ -244,3 +244,34 @@ body.contact-page {
     font-size: 0.95rem;
   }
 }
+@media (max-width: 768px) {
+  .glass-box.collapsed {
+    max-height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .glass-box.collapsed::after {
+    content: "Läs mer";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #fff;
+  }
+
+  .glass-box.expanded {
+    max-height: none;
+    cursor: auto;
+  }
+
+  .glass-box.expanded::after {
+    content: "";
+    display: none;
+  }
+}
