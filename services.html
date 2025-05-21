@@ -20,19 +20,9 @@
   </div>
 
   <section class="services-hero">
-    <div class="services-container">
-      <div class="service-box fade-in">
-        <h2>Yacht Detailing</h2>
-        <p>We provide professional yacht detailing and cleaning services...</p>
-      </div>
-      <div class="service-box fade-in">
-        <h2>Full-Service Yacht Management</h2>
-        <p>Let go of the hassle and enjoy the privileges of yacht ownership...</p>
-      </div>
-      <div class="service-box fade-in">
-        <h2>Yacht Transport</h2>
-        <p>Need to move your yacht to a new destination?... </p>
-      </div>
+    <div class="glass-box fade-in collapsed" onclick="toggleExpand(this)">
+      <h1>Our Services</h1>
+      <p>GLD Yacht Management provides a wide range of premium services tailored for yacht owners, guests, and captains. Our offerings include vessel maintenance, crew sourcing, provisioning, luxury guest concierge, charter preparation, and full itinerary planning. Each service is delivered with the highest level of professionalism and attention to detail to ensure a seamless yachting experience.</p>
     </div>
   </section>
 
@@ -41,6 +31,13 @@
   <script>
     function toggleMenu() {
       document.querySelector('.nav-links').classList.toggle('show');
+    }
+
+    function toggleExpand(box) {
+      if (window.innerWidth <= 768) {
+        box.classList.toggle('expanded');
+        box.classList.toggle('collapsed');
+      }
     }
   </script>
 </body>
