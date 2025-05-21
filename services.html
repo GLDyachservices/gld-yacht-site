@@ -18,27 +18,20 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
+<section class="services-hero services-container">
+  <div class="service-box collapsed" onclick="toggleExpand(this)">
+    <h2>Yacht Maintenance</h2>
+    <p>We handle regular servicing, deep cleaning, mechanical inspections, and seasonal storage preparation to keep your yacht in peak condition year-round.</p>
+  </div>
 
-  <section class="services-hero">
-    <div class="glass-box fade-in collapsed" onclick="toggleExpand(this)">
-      <h1>Our Services</h1>
-      <p>GLD Yacht Management provides a wide range of premium services tailored for yacht owners, guests, and captains. Our offerings include vessel maintenance, crew sourcing, provisioning, luxury guest concierge, charter preparation, and full itinerary planning. Each service is delivered with the highest level of professionalism and attention to detail to ensure a seamless yachting experience.</p>
-    </div>
-  </section>
+  <div class="service-box collapsed" onclick="toggleExpand(this)">
+    <h2>Luxury Guest Concierge</h2>
+    <p>From on-shore experiences to gourmet provisioning and onboard entertainment, our concierge service ensures every moment is curated to perfection.</p>
+  </div>
 
-  <div class="footer">© 2025 GLD Yacht Management and Services. All rights reserved.</div>
+  <div class="service-box collapsed" onclick="toggleExpand(this)">
+    <h2>Crew Management & Charter Support</h2>
+    <p>We source and manage professional crew and prepare your vessel for charter, including itinerary planning, legal compliance, and guest onboarding.</p>
+  </div>
+</section>
 
-  <script>
-    function toggleMenu() {
-      document.querySelector('.nav-links').classList.toggle('show');
-    }
-
-    function toggleExpand(box) {
-      if (window.innerWidth <= 768) {
-        box.classList.toggle('expanded');
-        box.classList.toggle('collapsed');
-      }
-    }
-  </script>
-</body>
-</html>
