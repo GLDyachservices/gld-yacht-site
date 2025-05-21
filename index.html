@@ -5,46 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GLD Yacht Management</title>
   <link rel="stylesheet" href="css/pages.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Playfair+Display:ital@1&display=swap">
-  <style>
-    /* Mobilanpassning */
-    .hamburger {
-      display: none;
-      font-size: 2rem;
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-      z-index: 3;
-    }
-
-    @media (max-width: 768px) {
-      .hamburger {
-        display: block;
-      }
-
-      .nav-links {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background: rgba(0, 0, 0, 0.9);
-        flex-direction: column;
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-out;
-      }
-
-      .nav-links.show {
-        max-height: 300px;
-      }
-
-      .nav-links li {
-        padding: 1rem;
-        text-align: center;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 </head>
 <body class="home-page">
   <div class="navbar">
@@ -70,8 +31,7 @@
 
   <script>
     function toggleMenu() {
-      const navLinks = document.querySelector('.nav-links');
-      navLinks.classList.toggle('show');
+      document.querySelector('.nav-links').classList.toggle('show');
     }
   </script>
 </body>
