@@ -20,10 +20,9 @@
   </div>
 
   <section class="about-hero">
-    <div class="glass-box fade-in">
+    <div class="glass-box fade-in collapsed" onclick="toggleExpand(this)">
       <h1>About GLD</h1>
-      <p>GLD Yacht Management was established in 2023 on the storied shores...</p>
-      <!-- Fortsätt här med resten av texten -->
+      <p>GLD Yacht Management was established in 2023 on the storied shores of Martha’s Vineyard. Founded by seasoned yachting professionals, GLD was built to meet the growing demand for luxury vessel care and guest service at the highest standard. Whether maintaining a superyacht or organizing bespoke guest experiences, GLD blends discretion, precision, and passion into every detail.</p>
     </div>
   </section>
 
@@ -32,6 +31,13 @@
   <script>
     function toggleMenu() {
       document.querySelector('.nav-links').classList.toggle('show');
+    }
+
+    function toggleExpand(box) {
+      if (window.innerWidth <= 768) {
+        box.classList.toggle('expanded');
+        box.classList.toggle('collapsed');
+      }
     }
   </script>
 </body>
