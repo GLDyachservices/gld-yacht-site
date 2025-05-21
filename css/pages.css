@@ -1,4 +1,9 @@
 /* === Allmänna stilar === */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
