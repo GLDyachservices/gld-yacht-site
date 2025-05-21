@@ -84,22 +84,22 @@ body {
 
 /* Page-specific backgrounds */
 body.about-page {
-  background: url("gld/about.jpeg") no-repeat center center fixed;
+  background: url("../gld/about.jpeg") no-repeat center center fixed;
   background-size: cover;
 }
 
 body.services-page {
-  background: url("gld/services.jpeg") no-repeat center center fixed;
+  background: url("../gld/services.jpeg") no-repeat center center fixed;
   background-size: cover;
 }
 
 body.contact-page {
-  background: url("gld/contact.jpeg") no-repeat center center fixed;
+  background: url("../gld/contact.jpeg") no-repeat center center fixed;
   background-size: cover;
 }
 
 body.home-page {
-  background: url("gld/hero (kopia).jpeg") no-repeat center center fixed;
+  background: url("../gld/hero (kopia).jpeg") no-repeat center center fixed;
   background-size: cover;
 }
 
